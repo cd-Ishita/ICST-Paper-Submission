@@ -1,0 +1,3 @@
+assertion inserted : 26
+assertion violation detected (dynamic) :       23
+assertion violation detected (unique) :       23

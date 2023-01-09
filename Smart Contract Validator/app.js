@@ -21,7 +21,7 @@ rl.question("Enter the name of smart contract: ", function (answer) {
             console.log("Output:\n")
 
             if(engine == "BMC"){
-                exec('sh asserterBMC.sh ' + fileName,
+                exec('sh asserterBMC.sh ' + file,
                 function (error, stdout, stderr) {
                     console.log('stdout: ' + stdout);
                     console.log('stderr: ' + stderr);
@@ -33,7 +33,7 @@ rl.question("Enter the name of smart contract: ", function (answer) {
                 return "Exec done"
             }
             else{
-                exec('sh asserterCHC.sh ' + fileName,
+                exec('sh asserterCHC.sh ' + file,
                 function (error, stdout, stderr) {
                     console.log('stdout: ' + stdout);
                     console.log('stderr: ' + stderr);

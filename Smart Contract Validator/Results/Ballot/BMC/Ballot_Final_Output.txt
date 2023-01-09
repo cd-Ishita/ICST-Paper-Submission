@@ -1,0 +1,217 @@
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:30:2:
+   |
+30 | 	assert(!(            msg.sender == chairperson));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  voter = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:31:2:
+   |
+31 | 	assert(!(!(            msg.sender == chairperson)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 28100
+  voter = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:36:2:
+   |
+36 | 	assert(!(            !voters[voter].voted));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 18457
+  voter = 25906
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:37:2:
+   |
+37 | 	assert(!(!(            !voters[voter].voted)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 12456
+  voter = 12617
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:42:2:
+   |
+42 | 	assert(!(voters[voter].weight == 0));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 12279
+  voter = 29404
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:43:2:
+   |
+43 | 	assert(!(!(voters[voter].weight == 0)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 27856
+  voter = 24337
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:49:2:
+   |
+49 | 	assert(!(!sender.voted));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:50:2:
+   |
+50 | 	assert(!(!(!sender.voted)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:52:2:
+   |
+52 | 	assert(!(to != msg.sender));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 15619
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:53:2:
+   |
+53 | 	assert(!(!(to != msg.sender)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:56:2:
+   |
+56 | 	assert(!(voters[to].delegate != address(0)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 435
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:59:2:
+   |
+59 | 	assert(!(to != msg.sender));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 26727
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:60:2:
+   |
+60 | 	assert(!(!(to != msg.sender)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 29134
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:66:2:
+   |
+66 | 	assert(!(delegate_.voted));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 1
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:67:2:
+   |
+67 | 	assert(!(!(delegate_.voted)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  to = 1
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:76:2:
+   |
+76 | 	assert(!(sender.weight != 0));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  proposal = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:77:2:
+   |
+77 | 	assert(!(!(sender.weight != 0)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  proposal = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:79:2:
+   |
+79 | 	assert(!(!sender.voted));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  proposal = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:80:2:
+   |
+80 | 	assert(!(!(!sender.voted)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  proposal = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:91:2:
+   |
+91 | 	assert(!( p < proposals.length));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  p = 20252
+  proposals.length = 20253
+  winningProposal_ = 0
+  winningVoteCount = 0
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:93:2:
+   |
+93 | 	assert(!(proposals[p].voteCount > winningVoteCount));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  p = 20693
+  proposals.length = 20694
+  winningProposal_ = 0
+  winningVoteCount = 30926
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:94:2:
+   |
+94 | 	assert(!(!(proposals[p].voteCount > winningVoteCount)));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 0
+  p = 0
+  proposals.length = 3699
+  winningProposal_ = 0
+  winningVoteCount = 16958
+
+Warning: BMC: Assertion violation happens here.
+  --> Results/Ballot/BMC/Ballot_mod.sol:21:2:
+   |
+21 | 	assert(!( i < proposalNames.length));
+   | 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Counterexample:
+  chairperson = 29093
+  i = 6910
+  proposalNames.length = 6911
+
